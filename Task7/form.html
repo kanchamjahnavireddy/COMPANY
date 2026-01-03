@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 50px;
+            margin-left: 350px;
+            margin: 0;
+            padding: 10px;
+
+        }
+
+        .feature {
+            display: flex;
+            gap: 700px;
+        }
+
+        .feature img {
+            height: 150px;
+            width: 250px;
+        }
+
+        .topics {
+            display: flex;
+            gap: 600px;
+        }
+        caption{
+            border: 1px solid #9999992c;
+            background-color: #9999992c;
+            padding: 6px;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table,th,td{
+            border: 1px solid #999;
+        }
+        th,td{
+            padding: 5px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My HTML Portfolio</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <section>
+        <h2  id="home">About HTML</h2>
+        <hr>
+        <p>HTML stands for HyperText Markup Language. It is the standard language used to create web pages.</p><br>
+    </section>
+    <section>
+        <h2 id="features">Key Features of HTML</h2>
+        <hr>
+        <div class="feature">
+            <div>
+                <ul>
+                    <li>Easy to learn</li>
+                    <li>Semantic structure</li>
+                    <li>Multimedia support</li>
+                    <li>Forms and tables</li>
+                </ul>
+            </div>
+            <div>
+                <img src="coffee.jpeg" alt="Laptop and coffee">
+                <p><em>Laptop and Coffee</em></p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>HTML Topics Coverd</h2>
+        <hr>
+        <div class="topics">
+            <div>
+                <ol>
+                    <li>Headings & Sections</li>
+                    <li>Lists and Tables</li>
+                    <li>Forms and Inputs</li>
+                    <li>Media Embeds</li>
+                </ol>
+            </div>
+            <div>
+                <table>
+                    <caption>Project TimeLine</caption>
+                    <thead>
+                        <tr>
+                            <th>Phase</th>
+                            <th>Tasks</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Planning</td>
+                            <td>Research & Outline</td>
+                            <td>1 Week</td>
+                        </tr>
+                        <tr>
+                            <td>Development</td>
+                            <td>Coding Content</td>
+                            <td>2 Weeks</td>
+                        </tr>
+                        <tr>
+                            <td>Review</td>
+                            <td>Testing & Fixes</td>
+                            <td>3 Days</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Resources</h2>
+        <hr>
+        <ul>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a>-HTML Guide
+                <p>Comprehensive HTML reference</p>
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/">W3Schools</a>-HTML TUtorial
+                <p>Learn HTML basics</p>
+            </li>
+        </ul>
+
+    </section>
+    <hr>
+    <section id="demo">
+    <h2>Demo Video</h2>
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/ts0mU1_fQVA?si=zgLnsz1LmIXnjcaF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+    <p>Lazy-loaded demo via iframe</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <hr>
+
+    <form>
+        <label>Name:<input type="text" name="name"></label><br>
+        <label>Email:<input type="email" name="email"></label><br>
+        <label>Message:<textarea name="message" rows="5"></textarea>
+        </label><br>
+
+        <label><input type="checkbox"> Subscribe to newsletter?</label>
+        <input type="checkbox" name="subscribe"> Yes
+        <input type="checkbox" name="subscribe"> No<br>
+
+        <label>Preferred Contact:</label>
+        <input type="checkbox"> Email
+        <input type="checkbox"> Phone<br>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+<hr>
+
+<footer style="text-align: center;">
+    © 2024 My HTML Portfolio | <a href="">contact@example.com</a>| Location: Anytown, USA
+</footer>
+
+</body>
+</html>
+
+</body>
+</html>
