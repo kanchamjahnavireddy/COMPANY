@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 50px;
+            margin-left: 350px;
+            margin: 0;
+            padding: 5px;
+
+        }
+
+        .home {
+            display: flex;
+            gap: 300px;
+        }
+
+        .home button {
+            width: 400px;
+            padding: 10px;
+        }
+
+        .notes {
+            background-color: burlywood;
+            padding: 2px;
+            width: 500px;
+            border: 1px solid white;
+            text-align: center;
+        }
+
+        .add input {
+            width: 350px;
+            padding: 6px;
+        }
+
+        .add button {
+            color: white;
+            background-color: blue;
+            padding: 6px;
+            width: 120px;
+        }
+
+        .todo {
+            display: flex;
+            gap: 200px;
+        }
+
+        .time button {
+            color: white;
+            background-color: blue;
+            padding: 6px;
+            width: 120px;
+        }
+        
+        .list button {
+            width: 120px;
+            color: blue;
+        }
+
+        .count {
+            display: flex;
+            gap: 300px;
+        }
+
+        .contact p {
+            color: red;
+        }
+
+        .feat {
+            position: absolute;
+            top: 50;
+        }
+
+        .feat button {
+            width: 400px;
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+        }
+
+        h4 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Interactive Web Project</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dynamic</a></li>
+                <li><a href="#">Timer</a></li>
+                <li><a href="#">ContactForm</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <section id="home">
+        <h2>About This Project</h2>
+        <hr>
+        <div class="home">
+            <div>
+                <p>This is a sample interactive web page buit using HTML and JavaScript.<br>It features dynamic content manipulation,
+                    form validation, and local storage.</p>
+                <h3>Features Demonstrated:</h3>
+                <ul>
+                    <li>DOM manipulation</li>
+                    <li>Form validation</li>
+                    <li>Event-haildling</li>
+                    <li>Dynamic content-updates</li>
+                    <li>Local storage</li>
+                </ul>
+            </div>
+            <div>  
+                <img src="map.jpg" alt="map1" width="400" height="200">
+                <button onclick="toggleMap">Toggle Map</button>
+            </div>
+        </div>
+    </section>
+    <section id="timer">
+        <div class="todo">
+            <div>
+                <h2>Interactive To-Do List</h2>
+                <hr>
+                <div class="add">
+                    <input type="text" id="taskInput" placeholder="New Task.....">
+                    <button onclick="addTask">Add</button>
+                </div>
+                <ul class="list">
+                    <li>Learn HTML <button onclick="remove">Remove</button></li>
+                    <li>Practice JavaScript <button onclick="remove">Remove</button></li>
+                    <li>Store data in LocalStorage <button onclick="remove">Remove</button></li>
+                </ul>
+                <div class="notes">
+                    <p>Tasks are saved in your browser's local storage</p>
+                </div><br>
+                <button onclick="clear">Clear All Tasks</button>
+            </div>
+            <div>
+                <h2>Auto-Updating Timer</h2>
+                <hr>
+                <p>This counter auto-updates every second:</p><br>
+                <div class="time">
+                    <h2>Time elapsed: 00:00:08</h2>
+                    <button onclick="pause">Pause Timer</button>
+                    <button onclick="reset">Reset Timer</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="count">
+            <div>
+                <h2>Auto-Updating Timer</h2>
+                <hr>
+                <p>This counter auto-updates every second:</p><br>
+                <div class="time">
+                    <h2>Time elapsed: 00:00:08</h2>
+                    <button onclick="pause">Pause Timer</button>
+                    <button onclick="reset">Reset Timer</button><br><br><br>
+                    <h3>Feat Hesions & Videos</h3>
+                    <hr>
+                    <img src="map.jpg" alt="map1" width="400" height="200">
+                    <button onclick="toggleMap" style="text-align:center; background-color:white; width: 400px; padding: 10px; color: black;">Toggle Map</button>
+                </div>
+            </div>
+            <div>
+                <h2>Contact Form</h2>
+                <hr>
+                <p>Send me a message:</p>
+                <div class="contact">
+                    <label for="name">Name:</label>
+                    <input type="text">
+                    <p>Please enter your name.</p>
+                    <label for="email">Email:</label>
+                    <input type="text">
+                    <p>Please enter a valid email address.</p>
+                    <label for="email">Password:</label>
+                    <input type="text">
+                    <p>Password must be at least 6 characters long.</p>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="8" cols="60"></textarea><br><br>
+                    <label>Subscribe to newsletter?</label>
+                    <input type="checkbox" id="yes" value="Yes">Yes
+                    <input type="checkbox" id="no" value="No">No<br>
+                    <label>Preferred Contact:</label>
+                    <input type="checkbox" id="email" value="Email">Email
+                    <input type="checkbox" id="phone" value="Phone">Phone<br><br>
+                    <button type="submit">Clear Data</button>
+                    <h4>Your information is saved in this browser!</h4>
+                </div>
+            </div>
+        </div>
+    </section><br>
+    
+    <footer>
+        <p>© 2024 <strong>Interactive Web Project</strong>|Your email:<a href="">user@example.com</a></p>
+        <a href="">privacy policy</a> | <a href=""> Terms of Services</a>
+    </footer>
+</body>
+
+</html>
